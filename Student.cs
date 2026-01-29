@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Assi3._3
 {
-    internal class Student
+    public class Student
     {
         public int Id { get; set; }
         public string FName { get; set; }

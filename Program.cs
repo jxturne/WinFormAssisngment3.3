@@ -33,7 +33,7 @@ namespace Assi3._3
             Application.Run(new Form1());
         }
         public static List<Student>
-            {
+            {Console.WriteLine("Something here");
 }
     }
 
