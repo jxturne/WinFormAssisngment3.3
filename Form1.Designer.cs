@@ -1,7 +1,9 @@
 ﻿namespace Assi3._3
 {
+  
     partial class Form1
     {
+     
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -28,21 +30,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            Mainform = new DataGridView();
             btnAdd = new Button();
             btnDelete = new Button();
             lblStudentTitle = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Mainform).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // Mainform
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(277, 170);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(360, 225);
-            dataGridView1.TabIndex = 0;
+            Mainform.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Mainform.Location = new Point(230, 165);
+            Mainform.Name = "Mainform";
+            Mainform.RowHeadersWidth = 62;
+            Mainform.Size = new Size(567, 225);
+            Mainform.TabIndex = 0;
+            Mainform.CellContentClick += dataGridView1_CellContentClick;
             // 
             // btnAdd
             // 
@@ -52,6 +55,7 @@
             btnAdd.TabIndex = 1;
             btnAdd.Text = "Add New Record";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnDelete
             // 
@@ -61,6 +65,7 @@
             btnDelete.TabIndex = 2;
             btnDelete.Text = "Delete Record";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // lblStudentTitle
             // 
@@ -80,17 +85,17 @@
             Controls.Add(lblStudentTitle);
             Controls.Add(btnDelete);
             Controls.Add(btnAdd);
-            Controls.Add(dataGridView1);
+            Controls.Add(Mainform);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Mainform).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView Mainform;
         private Button btnAdd;
         private Button btnDelete;
         private Label lblStudentTitle;

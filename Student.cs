@@ -11,6 +11,6 @@ namespace Assi3._3
         public string LName { get; set; }
         public char Grade { get; set; }
 
-        public string MonthofAdmission { get; set; }
+        public string MonthAdmiited { get; set; }
     }
 }
